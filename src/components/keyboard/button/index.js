@@ -14,7 +14,7 @@ export default class Button extends React.Component {
       active, color, size, top, left, label, position, arrow,
     } = this.props;
     return (
-      <div
+      <button
         className={cn({ [style.button]: true, [style[color]]: true, [style[size]]: true })}
         style={{ top, left }}
       >
@@ -28,7 +28,7 @@ export default class Button extends React.Component {
           }}
         /> }
         <span className={cn({ [style.position]: position })}>{label}</span>
-      </div>
+      </button>
     );
   }
 }
